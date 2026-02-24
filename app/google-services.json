@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "23937849475",
+    "project_id": "warzonestrategyapp",
+    "storage_bucket": "warzonestrategyapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23937849475:android:77e1b3f4a1a005f37ee3b6",
+        "android_client_info": {
+          "package_name": "com.example.warzonestrategy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj8fz6geml4YMpv4ubaohhnVW4Zu7MviE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

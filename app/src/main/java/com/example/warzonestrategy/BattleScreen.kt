@@ -1,0 +1,37 @@
+package com.example.warzonestrategy
+
+
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.foundation.layout.*
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+
+@Composable
+fun BattleScreen(nav: NavController) {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text("Choose Strategy", fontSize = 25.sp)
+        Spacer(Modifier.height(16.dp))
+
+        Button(onClick = {
+            val win = Math.random() > 0.4
+            nav.navigate(Screen.Result.passResult(win))
+        }) {
+            Text("Attack",fontSize = 20.sp)
+        }
+
+        Spacer(Modifier.height(16.dp))
+        Button(onClick = {
+            nav.navigate(Screen.Result.passResult(false))
+        }) {
+            Text("Defend",fontSize = 20.sp)
+        }
+    }
+}
